@@ -1,0 +1,196 @@
+/*
+Paleta de Colores:
+Crema #fbf8ee
+Lila Claro #dddaf4
+Lila Oscuro #9fa8f0
+Violeta #473c8b
+Violeta Oscuro #22224f
+*/
+
+$colorTitulo: #22224f;
+$colorTexto: #9fa8f0;
+$colorFondo: #fbf8ee;
+$colorBorde: #22224f;
+$colorSubTitulo: #473c8b;
+$colorBoton: #22224f;
+
+@media ( min-width: 375px ) and ( max-width: 767px ){
+    .carousel{
+        max-width: 100%;
+    }
+    .header__menu {
+        max-width: 100%
+    }
+	.text-center{
+		max-width: 100%;
+	}
+}
+
+*	{
+		font-family: calibri;
+		background-color: $colorFondo;
+		color: $colorTexto;
+		margin: 1vw;
+}
+
+body {
+		background-color: $colorFondo;
+		color: $colorTexto;
+		margin: 10px 10px 10px 10px;
+	/*div	{
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}*/
+
+	h1 {
+		margin: 50px;
+		color: $colorTitulo;
+		text-align: right;
+		text-decoration: underline;
+		font-style: bold;
+	}
+	.navbar{
+		background-color: $colorFondo;
+		
+	}
+
+	h5 {
+		color: $colorSubTitulo;
+		padding: none;
+	}
+	h3	{
+		letter-spacing: 2px;
+		text-align: center;
+	}
+	nav {
+		color: $colorTexto;
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.encabezado {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}
+}
+
+main {
+	background-color:$colorFondo;
+	border-style: dotted;
+	border-spacing: 1px;
+	border-color: $colorBorde;
+	padding: 2vw;
+	display: grid;
+		
+		.header{
+			text-align: center;
+		}		
+}
+
+.banner{
+	display: flex;
+	justify-content: space-between;
+}
+
+.tabla{
+	border-style: solid;
+	border-color: $colorBorde;
+	width: 75%;
+	border-radius: 20px;
+  	border-width: 2px;
+	padding: 1px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.carousel{
+	max-height: 1000px;
+	max-width: 1000px;
+	margin: auto; 
+}	
+
+.calendario_tabla{
+		width: 75%;
+		border-style: solid;
+		border-radius: 20px;
+	  	border-width: 2px;
+		padding: 1px;
+		vertical-align: middle;
+		text-align: center;
+}
+
+aside {
+	text-align: center;
+}
+
+
+/*Estilos del Footer*/
+.contacto{
+	display: grid;
+	grid-template-areas: 'contacto tipo_info';
+}
+
+.btn {
+	background-color: $colorBoton;
+	color: #fbf8ee;
+}
+
+/*Estilos de Cards*/
+
+.cards{
+	display: grid;
+	grid-template-areas: 
+		'item_1 item_2 item_3'
+    	'item_4 item_5 item_6';
+	grid-template-columns: 25fr, 25fr, 25fr; 
+	grid-column-gap: 5px;
+}
+
+.hover{
+	transform:scale(1,1.25);
+	overflow: hidden;
+}
+	
+/*Estilo de reciclaje*/
+.header{
+	display: block;
+	grid-template-columns: 2fr 1fr;
+
+	.hmenu{
+		color:  #473c8b;
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+		margin: 20px;
+		padding: 20px;
+	}
+
+	.hintro{
+		text-align: left;
+		color:  #473c8b;
+		text-decoration: underline;
+		font-style: bold;
+	}
+
+	.hparrafo{
+		font-size: 20px;
+		text-align: justify;
+	}
+
+	.himg{
+		border-radius: 20px;
+		max-height: 500px;
+		max-width: 300px;
+		align-content: center;
+
+	}
+}
+
+a{
+	text-decoration: none;
+	color: #473c8b;
+}
+	
+
+
